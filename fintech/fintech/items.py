@@ -7,7 +7,7 @@ import scrapy
 
 
 class FintechItem(scrapy.Item):
-    # define the fields for your item here like:
+    # items data field
     cmp_name = scrapy.Field()
     founded_date = scrapy.Field()
     comp_desc = scrapy.Field()
@@ -16,8 +16,9 @@ class FintechItem(scrapy.Item):
     social_media_urls = scrapy.Field()
     company_image_url = scrapy.Field()
     sub_url = scrapy.Field()
+    cmp_original_name = scrapy.Field()
 
-
-class ImageItems(scrapy.Item):
-	image_urls = scrapy.Field()
+class ImageItem(scrapy.Item):
+    # image data field
     images = scrapy.Field()
+    image_urls = scrapy.Field()
